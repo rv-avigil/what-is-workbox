@@ -43,10 +43,9 @@ workbox.routing.registerRoute(
 );
 ```
 
-+ If network available, resolve request from network, else handle the offline exception
-+ Explicit handling of “No Cache” option.
-+ Useful to move your network request into a service worker.
-+ Useful for content that does not have an offline equivalent
++ If network available, resolve request from network, else handle the offline exception.
++ Provides a mechanism to attach additional behaviors and workbox plugins.
++ Useful for content that does not have an offline equivalent.
 	+ Analytics
 
 ### Stale While Revalidate
@@ -58,7 +57,7 @@ workbox.routing.registerRoute(
 ```
 
 + Data is served from the cache while a network request is used to populate the cache.
-+ Network responses are not fed to the app. Only to the cache
++ Network responses are not fed to the app. Only to the cache.
 + Common to alert the user of available updates to the page.
 + Should be used only when you can afford to render stale data to get *time to first paint* as low as possible.
 + Useful for frequently updated resources of non-essential data.
@@ -71,3 +70,8 @@ workbox.routing.registerRoute(
 ## Honorable Mentions
 + Background Sync for Google Analytics
 + Pre Cache
+
+## References
+[Strategy Reference](https://developers.google.com/web/tools/workbox/modules/workbox-strategies)
+
+[Offline Cook Book](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/)
