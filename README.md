@@ -71,6 +71,3 @@ workbox.routing.registerRoute(
 ## Honorable Mentions
 + Background Sync for Google Analytics
 + Pre Cache
-
-## Closing
-+ Reiterate goal of improve UX through applied caching strategies.
